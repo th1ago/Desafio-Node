@@ -42,6 +42,7 @@ export class ProvaTesteComponent {
 			/**
 			 * Monte a mensagem de erro avisando que já existe um Livro cadastrado sobre o nome e genero passados
 			 */
+			alert(`Ja exite livro cadastrado com o nome ${nome} o genero ${genero}`)
 		}
 	}
 
