@@ -51,9 +51,12 @@ export class ProvaTesteComponent {
 			const livro = this.listLivros[index]
 			/**
              * Implemente a validação onde retorne o Indice do Livro caso encontre um com mesmo nome e genero
-             */
+            */
+			if (livro[index].nome === livro && livro[index].genero === genero) {
+				return livro[index].indiceLivro;
+			}
 		}
-		return indiceLivro
+		return indiceLivro;
 	}
 
 	listarLivrosFantasia(): string{
