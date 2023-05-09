@@ -64,6 +64,12 @@ export class ProvaTesteComponent {
 		/**
 		 * Retorne uma String contendo o nome de todos os Livros que são de fantasia.
 		 */
+		let livrosFantasias = "";
+		for (let i = 0; i < this.listLivros.length; i++) {
+			if (this.listLivros[i].genero === 'fantasia') {
+				return livrosFantasias += this.listLivros[i].nome + ',';
+			}
+		}
 	}
 }
 
